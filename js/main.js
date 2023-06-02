@@ -194,3 +194,15 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+function writesubtitle(elemento) {
+  const arrTexto = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  arrTexto.forEach((letra, i)=>{
+    setTimeout(()=>{
+      elemento.innerHTML += letra;
+    }, 75 * i);
+  });
+}
+const titulo = document.querySelector('.home-data-subtitle');
+writesubtitle(titulo);
