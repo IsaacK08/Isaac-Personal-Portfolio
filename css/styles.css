@@ -1178,7 +1178,6 @@ img {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 566px) {
   .container {
     margin-left: var(--mb-1-5);
@@ -1230,7 +1229,6 @@ img {
     text-align: center;
   }
 }  
-=======
 
 @keyframes inicializar {
   from {
@@ -1243,7 +1241,6 @@ img {
     transform: translate3d(0, 0, 0);
   }
 }
->>>>>>> 030647897f4926969d182624a0085cf79c347e1a
 
 /* For nav-menu devices */
 @media screen and (max-width: 768px) {
