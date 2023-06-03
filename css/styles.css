@@ -148,7 +148,7 @@ img {
 }
 
 .nav-btns .change-theme:hover {
-  color: var(--body-color);
+  color: var(--four-color);
 }
 
 /* Color Control */
