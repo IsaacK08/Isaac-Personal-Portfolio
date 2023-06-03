@@ -10,6 +10,22 @@ if (navToggle) {
   });
 }
 
+/* MENU HIDDEN */
+if (navClose) {
+  navClose.addEventListener("click", () => {
+    navMenu.classList.remove("show-menu");
+  });
+}
+
+/* REMOVE MENU MOBILE */
+const navLink = document.querySelectorAll(".nav-link");
+
+function linkAction() {
+  const navMenu = document.getElementById("nav-menu");
+  navMenu.classList.remove("show-menu");
+}
+navLink.forEach((n) => n.addEventListener("click", linkAction));
+
 // Colors
 const widget = document.querySelector(".widget");
 const control = document.querySelector(".control");
@@ -33,22 +49,6 @@ colors.forEach((color) => {
 window.addEventListener("scroll", () => {
   control.classList.remove("open");
 });
-
-/* MENU HIDDEN */
-if (navClose) {
-  navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show-menu");
-  });
-}
-
-/* REMOVE MENU MOBILE */
-const navLink = document.querySelectorAll(".nav-link");
-
-function linkAction() {
-  const navMenu = document.getElementById("nav-menu");
-  navMenu.classList.remove("show-menu");
-}
-navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /* ACCORDION SKILLS */
 const skillsContent = document.getElementsByClassName(
@@ -263,4 +263,3 @@ icons.forEach((icon) => {
     });
   }
 });
-
