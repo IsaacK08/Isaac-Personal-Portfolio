@@ -219,10 +219,6 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 030647897f4926969d182624a0085cf79c347e1a
 function writesubtitle(elemento) {
   const arrTexto = elemento.innerHTML.split('');
   elemento.innerHTML = '';
@@ -233,7 +229,6 @@ function writesubtitle(elemento) {
   });
 }
 const titulo = document.querySelector('.home-data-subtitle');
-<<<<<<< HEAD
 writesubtitle(titulo);
 
 let themeToggler = document.querySelector('.theme-toggler');
@@ -269,7 +264,3 @@ icons.forEach((icon) => {
   }
 });
 
-
-=======
-writesubtitle(titulo);
->>>>>>> 030647897f4926969d182624a0085cf79c347e1a
