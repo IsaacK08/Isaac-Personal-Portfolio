@@ -357,12 +357,15 @@ img {
     background: url(/img/imgperfil.png);
     background-position: left;
     background-size: 350px;
-    background-color: var(--customColor);
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(10%, -35%);
     animation: morphing 5s infinite alternate ease-in-out;
+  }
+
+  #blob {
+    background-color: var(--customColor);
   }
   
   @keyframes morphing {
