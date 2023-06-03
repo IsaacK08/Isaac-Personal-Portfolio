@@ -10,6 +10,30 @@ if (navToggle) {
   });
 }
 
+// Colors
+const widget = document.querySelector(".widget");
+const control = document.querySelector(".control");
+
+widget.addEventListener("click", () => {
+  control.classList.toggle("open");
+});
+
+const colors = [...document.querySelectorAll(".colors span")];
+document.querySelector(":root").style.setProperty("--customColor", "#42caff");
+
+colors.forEach((color) => {
+  color.addEventListener("click", () => {
+    const currentColor = color.dataset.id;
+    document
+      .querySelector(":root")
+      .style.setProperty("--customColor", currentColor);
+  });
+});
+
+window.addEventListener("scroll", () => {
+  control.classList.remove("open");
+});
+
 /* MENU HIDDEN */
 if (navClose) {
   navClose.addEventListener("click", () => {
@@ -194,3 +218,51 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+
+function writesubtitle(elemento) {
+  const arrTexto = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  arrTexto.forEach((letra, i)=>{
+    setTimeout(()=>{
+      elemento.innerHTML += letra;
+    }, 75 * i);
+  });
+}
+const titulo = document.querySelector('.home-data-subtitle');
+writesubtitle(titulo);
+
+let themeToggler = document.querySelector('.theme-toggler');
+
+themeToggler.onclick = () =>{
+
+    themeToggler.classList.toggle('active');
+
+    if(themeToggler.classList.contains('active')){
+        document.body.classList.add('active');
+    }else{
+        document.body.classList.remove('active');
+    }
+
+}
+
+// theme
+const icons = [...document.querySelectorAll(".theme-icon")];
+
+icons.forEach((icon) => {
+  if (icon) {
+    icon.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+
+      if (document.body.classList.contains("dark")) {
+        icon.innerHTML = '<i class="bx bx-sun"></i>';
+        icon.style.color = "white";
+      } else {
+        icon.innerHTML = '<i class="bx bx-moon"></i>';
+        icon.style.color = "#121713";
+      }
+    });
+  }
+});
+
+
