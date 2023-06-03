@@ -354,7 +354,7 @@ img {
 #blob {
     width: 340px;
     height: 340px;
-    background: url(/img/imgperfil.png);
+    background: url(/img/imgperfil.png), var(--customColor);
     background-position: left;
     background-size: 350px;
     position: fixed;
@@ -362,10 +362,6 @@ img {
     top: 50%;
     transform: translate(10%, -35%);
     animation: morphing 5s infinite alternate ease-in-out;
-  }
-
-  #blob {
-    background-color: var(--customColor);
   }
   
   @keyframes morphing {
