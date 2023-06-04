@@ -354,7 +354,7 @@ img {
 #blob {
     width: 340px;
     height: 340px;
-    background: var(--customColor), url(/img/imgperfil.png);
+    background: url(../img/tuki.png), linear-gradient(to bottom, var(--three-color), var(--customColor));
     background-position: left;
     background-size: 350px;
     position: fixed;
