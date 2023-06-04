@@ -18,7 +18,9 @@
   --body-color: white;
   --container-color: #fff;
   --three-color:var(--white);
+  --button-color: white;
   --four-color:var(--black);
+  --five-color: black;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: var(--customColor);
   --blueColor-1: #7462e1;
@@ -39,6 +41,7 @@
   /* Font and typography */
   --body-font: "Poppins", sans-serif;
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --mega-font-size: 3rem;
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -92,6 +95,8 @@ body.dark-theme {
   --scroll-thumb-color: var(--customColor);
   --three-color: #080808;
   --four-color:var(--white);
+  --button-color: var(--customColor);
+  --five-color:var(--white)
 }
 
 /* BASE */
@@ -119,6 +124,19 @@ h3,
 h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+}
+
+.console-container {
+  font-weight: var(--font-semi-bold);
+  font-size: 1.4rem;
+  color: var(--customColor);
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+  color: var(--four-color);
 }
 
 ul {
@@ -295,7 +313,7 @@ img {
 .header .nav-logo, .header .nav-toggle {
   font-size: 1.5rem;
   color: var(--customColor);
-  font-weight: var(--font-medium);
+  font-weight: 9rem;
 }
 
 .header .nav-logo:hover, .header .nav-toggle:hover {
@@ -351,6 +369,8 @@ img {
   align-items: center;
 }
 
+
+
 #blob {
     width: 340px;
     height: 340px;
@@ -361,7 +381,7 @@ img {
     left: 50%;
     top: 50%;
     transform: translate(10%, -35%);
-    animation: morphing 5s infinite alternate ease-in-out;
+    animation: morphing 5s infinite alternate ease-in-out;  
   }
   
   @keyframes morphing {
@@ -479,16 +499,16 @@ img {
 /* BUTTONS */
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--customColor);
   color: var(--three-color);
   padding: 1rem;
   border-radius: .5rem;
   font-weight: var(--font-semi-bold);
-  border-color: var(--first-color);
+  border-color: var(--three-color);
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--five-color);
 }
 
 .button-icon {
@@ -838,7 +858,7 @@ img {
 
 .services-container .services-content .services-modal-content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: var(--three-color);
   padding: 1.5rem;
   border-radius: .5rem;
 }
@@ -1086,7 +1106,7 @@ img {
 }
 
 .footer-container .footer-social:hover {
-  color: var(--first-color-lighter);
+  color: var(--four-color);
 }
 
 .footer .footer-copy {
