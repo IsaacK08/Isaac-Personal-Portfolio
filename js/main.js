@@ -10,6 +10,29 @@ if (navToggle) {
   });
 }
 
+/*CONTACT*/
+
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc(){
+let parent = this.parentNode;
+parent.classList.add("focus");
+}
+
+function blurFunc(){
+    let parent2 = this.parentNode;
+    if (this.value =="") {
+
+        parent2.classList.remove("focus");
+    }   
+  }
+
+inputs.forEach((input2) => {
+    input2.addEventListener("focus", focusFunc);
+    input2.addEventListener("blur", blurFunc);
+});
+
+
 /* MENU HIDDEN */
 if (navClose) {
   navClose.addEventListener("click", () => {
@@ -305,3 +328,5 @@ icons.forEach((icon) => {
     });
   }
 });
+
+
