@@ -1762,7 +1762,16 @@ textarea.input {
     margin: 1rem;
     background-size: 220px;
   }
+
+  .about-container-data-description {
+    transform: translateX(14%);
+  }
+
+  .about-buttons {
+    transform: translateX(13%);
+  }
 }
+
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
