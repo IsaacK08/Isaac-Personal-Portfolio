@@ -3,6 +3,7 @@ const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
 
+
 /* MENU SHOW */
 if (navToggle) {
   navToggle.addEventListener("click", () => {
@@ -137,19 +138,25 @@ modalCloses.forEach((modalClose) => {
   });
 });
 
-/* PORTFOLIO SWIPER  */
-var swiperPortfolio = new Swiper(".portfolio-container", {
-  cssMode: true,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+/*FILTER TABS*/
+const tabs5 = document.querySelectorAll('[data-perkis]'),
+      tabContents5 = document.querySelectorAll('[data-content]')
+
+      tabs5.forEach(tab6 =>{
+        tabs5.addEventListener('click', () =>{
+          const perkis = document.querySelector(tab6.dataset.perkis)
+
+          tabContents5.forEach(tc =>{
+            tc.classList.remove('filters__active')
+          })
+          perkis.classList.add('filters__active')
+
+          tabs5.forEach(t =>{
+            t.classList.remove('filter-tab-active')
+          })
+          tab6.classList.add('filter-tab-active')
+        })
+      })
 
 /* TESTIMONIAL */
 var swiperTestimonial = new Swiper(".testimonial-container", {

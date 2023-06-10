@@ -631,58 +631,216 @@
         <section class="portfolio section" id="portfolio">
             <h2 class="section-title">Portafolio</h2>
             <span class="section-subtitle">Trabajos más recientes</span>
+<!--BLOC DE NOTAS-->
+<main class="main4">
+    <section class="filters container">
+    <!-------------FILTER TABS----------------->
+        <ul class="filters__content">
+            <button class="filters__button filter-tab-active" data-perkis="#projects">Proyectos</button>
 
-            <div class="portfolio-container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- PORTFOLIO 1 -->
-                    <div class="portfolio-content grid swiper-slide">
-                        <img src="img/portfolio1.jpg" alt="Portfolio" class="portfolio-img">
-                        <div class="portfolio-data">
-                            <h3 class="portfolio-title">Sitio Web moderno</h3>
-                            <p class="portfolio-description">Sitio web adaptable a todos los dispositivos, con componentes UI e
-                                interacciones animadas.</p>
-                            <a href="#" class="button button-flex button-small portfolio-button">
-                                Demo <i class="fas fa-arrow-right button-icon"></i>
-                            </a>
+            <button class="filters__button" data-perkis="#skills">Habilidades</button>
+        </ul>
+
+        <div class="filters__sections">
+            <!--------PROJECTS-------->
+            <div class="projects__content grid filters__active" data-contento id="projects">
+                
+
+
+                <article class="projects__card">
+                    <img src="assets/img/project1.jpg" alt="" class="projects__img">
+
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Web</span>
+                            <h3 class="projects__title">Payment Site</h3>
+                            <a href="#" class="projects__button button button__small">
+                            <i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
-                    <!-- PORTFOLIO 2 -->
-                    <div class="portfolio-content grid swiper-slide">
-                        <img src="img/portfolio2.jpg" alt="Portfolio" class="portfolio-img">
-                        <div class="portfolio-data">
-                            <h3 class="portfolio-title">Diseño de Marca</h3>
-                            <p class="portfolio-description">Sitio web adaptable a todos los dispositivos, con componentes UI e
-                                interacciones animadas.</p>
-                            <a href="#" class="button button-flex button-small portfolio-button">
-                                Demo <i class="fas fa-arrow-right button-icon"></i>
-                            </a>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/project2.jpg" alt="" class="projects__img">
+
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Web</span>
+                            <h3 class="projects__title">Portfolio Website</h3>
+                            <a href="#" class="projects__button button button__small">
+                            <i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
-                    <!-- PORTFOLIO 3 -->
-                    <div class="portfolio-content grid swiper-slide">
-                        <img src="img/portfolio3.jpg" alt="Portfolio" class="portfolio-img">
-                        <div class="portfolio-data">
-                            <h3 class="portfolio-title">Tienda Online</h3>
-                            <p class="portfolio-description">Sitio web adaptable a todos los dispositivos, con componentes UI e
-                                interacciones animadas.</p>
-                            <a href="#" class="button button-flex button-small portfolio-button">
-                                Demo <i class="fas fa-arrow-right button-icon"></i>
-                            </a>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/project3.jpg" alt="" class="projects__img">
+
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Movil</span>
+                            <h3 class="projects__title">Fast food App</h3>
+                            <a href="#" class="projects__button button button__small">
+                            <i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
-                </div>
-                <!-- Add Arrow -->
-                <div class="swiper-button-next">
-                    <i class="fas fa-angle-right swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="fas fa-angle-left swiper-portfolio-icon"></i>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/project4.jpg" alt="" class="projects__img">
+
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Movil</span>
+                            <h3 class="projects__title">Travel App</h3>
+                            <a href="#" class="projects__button button button__small">
+                            <i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/project5.jpg" alt="" class="projects__img">
+
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Design</span>
+                            <h3 class="projects__title">Music App Design</h3>
+                            <a href="#" class="projects__button button button__small">
+                            <i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </section>
 
+
+
+
+            <!---------SKILLS----------->
+            <div class="skills__content grid" data-content id="skills">
+                <div class="skills__area">
+                    <h3 class="skills__title">
+                    Frontend Developer
+                    </h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+
+
+                            
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+
+                            
+
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__area">
+                    <h3 class="skills__title">
+                    Backend Developer
+                    </h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h3 class="skills__name">FireBase</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <h3 class="skills__name">NodeJS</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
         
 
         <!-- TESTIMONIAL -->
@@ -818,7 +976,7 @@
             
                         <div class="contact-form">
             
-                        <form action="contact.html">
+                        <form action="">
                             <div class="back-title">
                             <h3 class="title">Escríbeme tu proyecto</h3>
                             </div>
@@ -828,12 +986,12 @@
                                 <span>Nombre Completo</span>
                             </div>
                             <div class="input-container">
-                                <input type="email" name="correo electróinico" class="input" />
+                                <input type="email" name="correo electrónico" class="input" />
                                 <label for="">Correo Electrónico</label>
                                 <span>Correo Electrónico</span>
                             </div>
                             <div class="input-container">
-                                <input type="tel" name="número de teléfono" class="input" />
+                                <input type="text" name="project" class="input" />
                                 <label for="">Proyecto</label>
                                 <span>Número de Teléfono</span>
                             </div>
@@ -902,6 +1060,9 @@
 
     <!-- MAIN JS -->
     <script src="js/main.js"></script>
+
+    <!--EMAIL JS-->
+    
 </body>
 
 </html>
